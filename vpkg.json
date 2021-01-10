@@ -1,0 +1,9 @@
+{
+  "name": "human_bytes",
+  "version": "1.0.0",
+  "author": [
+    "Mike Rockett <os@rockett.pw>"
+  ],
+  "repo": "https://github.com/mikerockett/human_bytes",
+  "dependencies": []
+}

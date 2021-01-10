@@ -7,7 +7,7 @@ Converts bytes into human-friendly strings.
 ## Install
 
 ```shell
-$ v install human_bytes # or
+$ vpkg get human_bytes # or v install mikerockett.human_bytes
 ```
 
 ## Use
