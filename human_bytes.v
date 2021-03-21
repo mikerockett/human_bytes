@@ -45,6 +45,7 @@ pub fn convert_opt(input_val f64, options Options) string {
 	if options.signed && value == 0 {
 		return format(' ', 0, options.precision) + display_unit(units, 0)
 	}
+
 	negative := value < 0
 
 	prefix := if negative {
