@@ -14,7 +14,7 @@ fn format(prefix string, value f64, precision int) string {
 	return prefix + format_fl(value, rm_tail_zero: true, len1: precision)
 }
 
-fn display_unit(units []string, index f64) string {
+fn display_unit(units []string, index int) string {
 	return ' ${units[index]}'
 }
 
@@ -66,5 +66,5 @@ pub fn convert_opt(input_val f64, options Options) string {
 	exponent := min(floored, units.len - 1)
 	value /= pow(if options.binary { 1024 } else { 1000 }, exponent)
 
-	return format(prefix, value, options.precision) + display_unit(units, exponent)
+	return format(prefix, value, options.precision) + display_unit(units, int(exponent))
 }
