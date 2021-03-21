@@ -33,9 +33,9 @@ pub fn convert_opt(input_val f64, options Options) string {
 	mut value := input_val
 
 	units := if options.binary {
-		if options.bits { human_bytes.binary_bit_units } else { human_bytes.binary_byte_units }
+		if options.bits { binary_bit_units } else { binary_byte_units }
 	} else {
-		if options.bits { human_bytes.bit_units } else { human_bytes.byte_units }
+		if options.bits { bit_units } else { byte_units }
 	}
 
 	if is_inf(input_val, 0) {
