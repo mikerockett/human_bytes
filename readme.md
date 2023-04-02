@@ -1,8 +1,8 @@
+<!-- exclude-from-website: -->
 # human_bytes
 
 Converts bytes into human-friendly strings.
-
-> Note that it uses base-10 (e.g. kilobyte). [Read about the difference between kilobyte and kibibyte.](https://web.archive.org/web/20150324153922/https://pacoup.com/2009/05/26/kb-kb-kib-whats-up-with-that/)
+<!-- /exclude-from-website -->
 
 ## Install
 
@@ -27,6 +27,8 @@ convert_opt(1025, bits: true, binary: true, signed: true) // +1 kibit
 ```
 
 ## API
+
+> Note that it uses base-10 (e.g. **kilobyte**). [Read about the difference between kilobyte and kibibyte.](https://web.archive.org/web/20150324153922/https://pacoup.com/2009/05/26/kb-kb-kib-whats-up-with-that/)
 
 ### `convert(input_val)`
 
